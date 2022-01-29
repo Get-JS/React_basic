@@ -6,20 +6,20 @@
     - component, rendering(Mounted), reconciliation, Virtual DOM
   - [JSX](lecture/Component/2.%20JSX.md)
     - JSX, Fragment, JS expresstion, if-statement, &&-conditional-rendering, inline-styling, className
+  - [Element](lecture/Component/4.%20Element.md)
+    - element-structure
   - [Component](lecture/Component/3.%20Component.md)
     - function-Component, class-Component
     - props, props-rendering&value(props)-setting, defaultProps, propTypes, propTypes-Required
     - state, state-setting-constructor(), setState(), immutable, state-classField-setting
-  - [Element](lecture/Component/4.%20Element.md)
-    - element-structure
-  - [EventHandling](lecture/Component/5.%20EventHandling.md)
-    - Event Menual, bind-Function, Property-Initializer-Syntax-allowFunction, event of component trigger
-  - [ComponentKey](lecture/Component/6.%20ComponentKey.md)
-    - key-setting, use not index, concat, slice, filter
   - [ComponentLifeCycle](lecture/Component/7.%20ComponentLifeCycle.md)
     - Mount, Update, UnMount, Exception
     - constructor, static-getDerivedStateFromProps, shouldComponentUpdate, render
     - getSnapshotBeforeUpdate, componentDidMount, componentDidUpdate, componentWillUnmount
+  - [EventHandling](lecture/Component/5.%20EventHandling.md)
+    - Event Menual, bind-Function, Property-Initializer-Syntax-allowFunction, event of component trigger
+  - [ComponentKey](lecture/Component/6.%20ComponentKey.md)
+    - key-setting, use not index, concat, slice, filter
   - [ContextAPI](lecture/Component/8.%20ContextAPI.md)
   - [ref](lecture/Component/9.%20ref.md)
     - createRef, function-component, ref-callback, forwardRef
