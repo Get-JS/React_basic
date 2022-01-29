@@ -5,7 +5,7 @@
   - [React](lecture/Component/1.%20React.md)
     - component, rendering(Mounted), reconciliation, Virtual DOM
   - [JSX](lecture/Component/2.%20JSX.md)
-    - JSX, Fragment, JS expresstion, if-statement, &&-conditional-rendering, inline-styling, className
+    - JSX, Fragment, JS expression, if-statement, &&-conditional-rendering, inline-styling, className
   - [Element](lecture/Component/4.%20Element.md)
     - element-structure
   - [Component](lecture/Component/3.%20Component.md)
@@ -17,7 +17,7 @@
     - constructor, static-getDerivedStateFromProps, shouldComponentUpdate, render
     - getSnapshotBeforeUpdate, componentDidMount, componentDidUpdate, componentWillUnmount
   - [EventHandling](lecture/Component/5.%20EventHandling.md)
-    - Event Menual, bind-Function, Property-Initializer-Syntax-allowFunction, event of component trigger
+    - Event Manual, bind-Function, Property-Initializer-Syntax-allowFunction, event of component trigger
   - [ComponentKey](lecture/Component/6.%20ComponentKey.md)
     - key-setting, use not index, concat, slice, filter
   - [ContextAPI](lecture/Component/8.%20ContextAPI.md)
@@ -74,7 +74,7 @@
     - prevState, prevProps value check
     - this.state, this.props value check
   - if return {}(object) in getDerivedStateFromProps(), no re-cycle to init step!!
-    - just keep going currenet cycle, and nextState change.
+    - just keep going current cycle, and nextState change.
   - if just parent update state, children component work?
     - children component call cycle. => rendering(Virtual DOM), but don't work real DOM.
 
@@ -86,7 +86,7 @@
       - class field
   - [GuGuDan](practice/GuGuDan/GuGuDan_hooks.html)
     - hook
-      - pure fuction + useState function
+      - pure function + useState function
 
 - [(P) WordRelay](practice/WordRelay)
 
@@ -123,7 +123,7 @@
       - MountUpdate!! -> if don't use the clearTimeout, queue the async WEB API method
       - so, you don't have that you want it result
 
-- [(P) Higer order Component](practice/Higher%20order%20Component)
+- [(P) Higher order Component](practice/Higher%20order%20Component)
 
   - inner Component has props that Higher order Component return value
 
