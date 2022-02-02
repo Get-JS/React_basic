@@ -79,7 +79,7 @@ function CustomHooks(props) {
       <button onClick={() => setName('init-update')}>name update</button>
       <button onClick={() => setName('init-name')}>name init</button>
       &nbsp;name: {name} <br />
-      isFaster: {isFaster ? 'fsst' : 'no'}
+      isFaster: {isFaster ? 'fast' : 'no'}
     </div>
   );
 }

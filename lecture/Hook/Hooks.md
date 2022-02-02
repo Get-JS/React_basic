@@ -10,7 +10,7 @@
 
 ```jsx
 function InputCustom() {
-  const [name, setName] = useStaet(); // * getter, setter 리턴
+  const [name, setName] = useState(); // * getter, setter 리턴
 }
 ```
 
@@ -42,7 +42,7 @@ function InputCustom() {
 ```jsx
 import React, { useState, useEffect } from "react";
 
-function Fcomponent() {
+function FComponent() {
   const [input, setInput] = useState();
   useEffect(() => {
     // * effect;
@@ -54,7 +54,7 @@ function Fcomponent() {
   return <div></div>;
 }
 
-export default Fcomponent;
+export default FComponent;
 ```
 
 - `렌더링이 끝나게 되면` `useEffect를` 실행하게 된다.
@@ -99,7 +99,7 @@ function process_a_component_rendering(component) {
 ```jsx
 import React, { useContext } from "react";
 
-function Fcomponent() {
+function FComponent() {
   const user = useContext(UserContext);
   console.log("user:", user.name, user.age);
 }
@@ -116,7 +116,7 @@ function Fcomponent() {
 ```jsx
 import React, { useContext, useRef } from "react";
 
-function Fcomponent() {
+function FComponent() {
   const preAgeRef = useRef();
   const user = useContext(UserContext);
   console.log("user:", user.name, user.age);
@@ -154,9 +154,9 @@ useCallback(() => {
 ```jsx
 import React, { useReducer } from "react";
 
-const INITIA_STATE = { name: 'empty'. age: 0};
+const INITIAL_STATE = { name: 'empty'. age: 0};
 function reducer(state, action) {
-  swtich(action.type) {
+  switch(action.type) {
     case 'setName':
       return {...state, name: action.name};
     case 'setAge':
@@ -165,8 +165,8 @@ function reducer(state, action) {
       return state;
   }
 }
-function Fcomponent() {
-  const [state, dispatch] = useReducer(reducer, INITIA_STATE);
+function FComponent() {
+  const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
   return (
     <div>
       <input
@@ -180,7 +180,7 @@ function Fcomponent() {
   );
 }
 
-export default Fcomponent;
+export default FComponent;
 
 ```
 
@@ -192,7 +192,7 @@ export default Fcomponent;
 ```jsx
 import React, { forwardRef, useState, useImperativeHandle } from "react";
 
-function Fcomponent(props, ref) {
+function FComponent(props, ref) {
   const [name, setName] = useState();
   useImperativeHandle(ref, () => {
     getNameLength: () => name.length,
@@ -200,7 +200,7 @@ function Fcomponent(props, ref) {
   return(<>{*....*}</>);
 }
 
-export default forwardRef(Fcomponent);
+export default forwardRef(FComponent);
 ```
 
 ```jsx
@@ -209,11 +209,11 @@ import React from "react";
 function use() {
   const chRef = useRef();
   const handleClick = () => {
-    console.log("current name length", chRef.cuurent.getNameLenght());
+    console.log("current name length", chRef.current.getNameLength());
   };
   return (
     <div>
-      <Fcomponent ref={chRef} />
+      <FComponent ref={chRef} />
     </div>
   );
 }
@@ -298,7 +298,7 @@ function useOnUpdate(func) {
 ## forceUpdate (customHook)
 
 ```jsx
-function Fcomponent() {
+function FComponent() {
   const [_, forceUpdate] = useReducer((s) => s + 1, 0);
 }
 ```

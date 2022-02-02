@@ -7,7 +7,7 @@ function Hooks() {
   const [value, setValue] = useState();
   const [id, setId] = useState(1);
   const [speed, setSpeed] = useState(0);
-  const [toogle, setToogle] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   return (
     <div
@@ -30,14 +30,14 @@ function Hooks() {
           이것은 일부 setState 함수가 순수하지 않을 때 발생할 수있는 버그를 잡기 위해 수행된다.
           <br />
         </p>
-        <button onClick={() => setToogle(!toogle)}>toogle</button>
-        {toogle ? (
+        <button onClick={() => setToggle(!toggle)}>toggle</button>
+        {toggle ? (
           <div style={{ border: '1px solid' }}>
             <h2>Hooks state management</h2>
             <p>
               rendering을 할 때마다 상탯값을 초기화는것이 아니라, 해당 컴포넌트의 hooks사용을 배열로 정보를 저장해 둔다.
               <br />
-              re-rendering을 한 후는 상탯값 초기화를 무시하며 component 안의 로직을 순서대로 읽고, return element를 한 후, useEffect 처럼 rendring 이후의 hook callback(async) 함수를 호출하게 된다.
+              re-rendering을 한 후는 상탯값 초기화를 무시하며 component 안의 로직을 순서대로 읽고, return element를 한 후, useEffect 처럼 rendering 이후의 hook callback(async) 함수를 호출하게 된다.
             </p>
             <button
               onClick={() => {
